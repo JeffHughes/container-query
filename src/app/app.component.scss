@@ -1,0 +1,49 @@
+$color-min: #d62828;
+$color-300-400: #ffddd2;
+$color-400-500: #e29578;
+$color-over-500: #006d77;
+
+.container-0 {
+  background-color: $color-min;
+  &::after {
+    content: " below 300";
+  }
+}
+
+.container-300 {
+  background-color: $color-300-400;
+  &::after {
+    content: " betwee 300 & 400";
+  }
+}
+
+.container-400 {
+  background-color: $color-400-500;
+  &::after {
+    content: " betwee 400 & 500";
+  }
+}
+
+.container-500 {
+  background-color: $color-over-500;
+
+  &::after {
+    content: " above 500";
+  }
+}
+
+.custom-300 {
+  background-color: $color-min;
+}
+
+.custom-400 {
+  background-color: $color-300-400;
+}
+
+.custom-500 {
+  background-color: $color-over-500;
+}
+
+div {
+  width: 100%;
+}
